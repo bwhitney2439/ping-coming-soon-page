@@ -12,6 +12,9 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
   height: 100vh;
+}
+
+.page-container {
   text-align: center;
 }
 
@@ -42,21 +45,27 @@ body {
 
 .page-container .form {
   margin: auto;
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .page-container .form input {
+  width: 68%;
   border-radius: 20px;
   padding: 12px 20px;
   margin: 8px 0;
   outline: none;
   border: 1px solid #c2d3ff;
-  margin-right: 10px;
 }
 
 .page-container .form button {
+  width: 30%;
   color: white;
   border-radius: 20px;
   padding: 12px 20px;
@@ -64,5 +73,24 @@ body {
   outline: none;
   background-color: #4f7df3;
   border: none;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+}
+
+.page-container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 500px;
+  margin: auto;
+}
+
+.page-container .social-icons .social-icon {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=index.css.map */
