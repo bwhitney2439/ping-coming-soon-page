@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <h2 class="title">PING<span class="title-period">.</span></h2>
+      <h1 class="launch-title">
+        We are launching <span class="launch-title-soon">soon!</span>
+      </h1>
+      <p class="subscribe-title">Subscribe and get notified</p>
+      <div class="form">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+        />
+        <button>Notify Me</button>
+      </div>
 
-  Subscribe and get notified
+      <img src="./images/illustration-dashboard.png" alt="" width="500" />
 
-  Notify Me
+      <div class="social-icons">
+        <div class="social-icon">
+          <i class="fa fa-facebook"></i>
+        </div>
+        <div class="social-icon">
+          <i class="fa fa-instagram"></i>
+        </div>
+        <div class="social-icon">
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
 
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <small class="copyright"
+        >&copy; Copyright Ping. All rights reserved.</small
+      >
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ben Whitney</a>.
+      </p>
+    </footer>
+  </body>
 </html>

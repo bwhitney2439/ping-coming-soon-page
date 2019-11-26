@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+.page-container .title {
+  margin-bottom: 25px;
+}
+
+.page-container .title .title-period {
+  color: #4f7df3;
+}
+
+.page-container .launch-title {
+  color: #969696;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.page-container .launch-title .launch-title-soon {
+  color: black;
+  font-weight: 700;
+}
+
+.page-container .subscribe-title {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.page-container .form {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-container .form input {
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid #c2d3ff;
+  margin-right: 10px;
+}
+
+.page-container .form button {
+  color: white;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  background-color: #4f7df3;
+  border: none;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap");
+
+// ## Colors
+// ### Primary
+
+$blue: hsl(223, 87%, 63%);
+
+// ### Secondary
+
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+// ### Neutral
+
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+.page-container {
+  .title {
+    margin-bottom: 25px;
+    .title-period {
+      color: $blue;
+    }
+  }
+
+  .launch-title {
+    color: $gray;
+    font-weight: 300;
+    margin-bottom: 5px;
+
+    .launch-title-soon {
+      color: black;
+      font-weight: 700;
+    }
+  }
+
+  .subscribe-title {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .form {
+    margin: auto;
+    // width: 500px;
+    display: flex;
+
+    input {
+      border-radius: 20px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      outline: none;
+      border: 1px solid $pale-blue;
+      margin-right: 10px;
+    }
+
+    button {
+      color: white;
+      border-radius: 20px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      outline: none;
+      background-color: $blue;
+      border: none;
+    }
+  }
+}
