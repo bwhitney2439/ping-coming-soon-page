@@ -27,10 +27,16 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-container {
+  width: 500px;
   text-align: center;
+  margin-bottom: 25px;
   .title {
     margin-bottom: 25px;
     .title-period {
@@ -56,24 +62,36 @@ body {
   }
 
   .form {
+    position: relative;
     margin: auto;
-    width: 500px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 
+    .email-address-error {
+      position: absolute;
+      font-size: 0.68rem;
+      top: 55px;
+      left: 20px;
+      color: red;
+      opacity: 0;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
     input {
-      width: 68%;
+      width: 65%;
       border-radius: 20px;
       padding: 12px 20px;
       margin: 8px 0;
       outline: none;
       border: 1px solid $pale-blue;
-      // margin-right: 10px;
     }
 
     button {
-      width: 30%;
+      width: 32%;
       color: white;
       border-radius: 20px;
       padding: 12px 20px;
@@ -82,18 +100,81 @@ body {
       background-color: $blue;
       border: none;
       box-shadow: 5px 10px 18px #888888;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
+  img {
+    margin-bottom: 60px;
+    width: 100%;
+  }
   .social-icons {
     display: flex;
     justify-content: space-evenly;
-    width: 500px;
+    align-items: center;
+    width: 150px;
     margin: auto;
+    margin-bottom: 25px;
     .social-icon {
-      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $pale-blue;
+      opacity: 0.8;
       padding: 5px;
-      border-radius: 50px;
+      width: 35px;
+      height: 35px;
+      border-radius: 100px;
+      transition: all 1s;
+      &:hover {
+        background: $blue;
+        i {
+          color: white;
+        }
+      }
+      i {
+        color: $blue;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 1rem;
+    color: $gray;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .page-container {
+    width: 100vw;
+    padding: 25px;
+    .form {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 85%;
+      }
+      button {
+        width: 85%;
+      }
+      .email-address-error {
+        position: unset;
+        display: block;
+        font-size: 0.68rem;
+        color: red;
+        opacity: 0;
+      }
+
+      .active {
+        position: unset;
+        opacity: 1;
+        font-size: 0.68rem;
+        color: red;
+      }
     }
   }
 }
