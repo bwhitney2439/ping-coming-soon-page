@@ -44,7 +44,7 @@ body {
 .page-container .launch-title {
   color: #969696;
   font-weight: 300;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .page-container .launch-title .launch-title-soon {
@@ -53,6 +53,7 @@ body {
 }
 
 .page-container .subscribe-title {
+  color: #969696;
   font-weight: 300;
   font-size: 1rem;
   margin-bottom: 25px;
@@ -75,7 +76,7 @@ body {
   font-size: 0.68rem;
   top: 55px;
   left: 20px;
-  color: red;
+  color: #ff5263;
   opacity: 0;
 }
 
@@ -170,8 +171,18 @@ body {
 
 @media screen and (max-width: 675px) {
   .page-container {
-    width: 100vw;
-    padding: 25px;
+    width: 90vw;
+    padding: 30px;
+  }
+  .page-container .launch-title {
+    font-size: 25px;
+  }
+  .page-container .launch-title .launch-title-soon {
+    color: black;
+    font-weight: 700;
+  }
+  .page-container .subscribe-title {
+    font-size: 0.78rem;
   }
   .page-container .form {
     -webkit-box-orient: vertical;
@@ -183,23 +194,23 @@ body {
             align-items: center;
   }
   .page-container .form input {
-    width: 85%;
+    width: 100%;
   }
   .page-container .form button {
-    width: 85%;
+    width: 100%;
   }
   .page-container .form .email-address-error {
     position: unset;
     display: block;
     font-size: 0.68rem;
-    color: red;
+    color: #ff5263;
     opacity: 0;
   }
   .page-container .form .active {
     position: unset;
     opacity: 1;
     font-size: 0.68rem;
-    color: red;
+    color: #ff5263;
   }
 }
 /*# sourceMappingURL=index.css.map */
